@@ -1,21 +1,24 @@
 package com.betrybe.sistemadevotacao;
 
-/** class for candidates people object.
+/**
+ * class for candidates people object.
+ *
  * @author Bruno Mendes
  * @version 1.0
- *
  */
-public abstract class PessoaCandidata extends Pessoa {
+public class PessoaCandidata extends Pessoa {
   private int numero;
   private int votos;
 
-  /** PessoaCandidata constructor.
-   * @param nome String - candidate name
+  /**
+   * PessoaCandidata constructor.
+   *
+   * @param nome   String - candidate name
    * @param numero int - candidate number id
    */
 
   public PessoaCandidata(String nome, int numero) {
-    this.nome = nome;
+    super(nome);
     this.numero = numero;
     this.votos = 0;
 
@@ -37,7 +40,7 @@ public abstract class PessoaCandidata extends Pessoa {
     this.votos = votos;
   }
 
-  public void receberVotos() {
+  public void receberVoto() {
     this.votos += 1;
   }
 
