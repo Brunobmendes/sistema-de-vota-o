@@ -74,4 +74,12 @@ public class GerenciamentoVotacao implements GerenciamentoVotacaoInterface {
       System.out.println("Total de votos: " + votes);
     }
   }
+
+  public ArrayList<PessoaCandidata> getPessoasCandidatas() {
+    return pessoasCandidatas;
+  }
+
+  public ArrayList<PessoaEleitora> getPessoasEleitoras() {
+    return pessoasEleitoras;
+  }
 }
